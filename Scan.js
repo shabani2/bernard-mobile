@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, Button, ActivityIndicator } from 'react-native';
 import BleManager from 'react-native-ble-manager';
 
-const App = () => {
+const Scan = () => {
   const [devices, setDevices] = useState([]);
   const [scanning, setScanning] = useState(false);
   const [loading, setLoading] = useState(false); // Add a state variable for loading indicator
@@ -98,4 +98,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Scan;
